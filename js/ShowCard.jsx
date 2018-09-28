@@ -1,6 +1,6 @@
-import React from "react";
-import { shape, string } from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import { shape, string } from 'prop-types';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width: 32%;
@@ -19,10 +19,7 @@ const Image = styled.img`
 
 const ShowCard = props => (
   <Wrapper>
-    <Image
-      alt={`${props.show.title} Show Poster`}
-      src={`/public/img/posters/${props.show.poster}`}
-    />
+    <Image alt={`${props.show.title} Show Poster`} src={`/public/img/posters/${props.show.poster}`} />
     <div>
       <h3>{props.show.title}</h3>
       <h4>({props.show.year})</h4>
